@@ -17,6 +17,13 @@
         body {
             height: 100%;
         }
+
+        .list-group {
+            max-height: 100%;
+            margin-bottom: 10px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
     </style>
 </head>
 
@@ -59,9 +66,9 @@
     <!-- Navbar -->
 
     <div class="row h-100 w-100 m-0">
-        <div class="col-3 p-0">
+        <div class="col-3 p-0 h-100">
             <div class="list-group">
-                <button type="button" class="list-group-item list-group-item-action pb-0 active" aria-current="true">
+                <button type="button" class="list-group-item list-group-item-action pb-0 active" data-mdb-toggle="list" aria-current="true" onclick="document.getElementById('playerwow').src = 'https://player.twitch.tv/?channel=khotkool_channel&parent=quad-b.github.io'">
                     <div class="row">
                         <div class="col-md-4 col-sm-5">
                             <img src="/img/oat.png" class="w-100">
@@ -73,7 +80,7 @@
                         </div>
                     </div>
                 </button>
-                <button type="button" class="list-group-item list-group-item-action pb-0">
+                <button type="button" class="list-group-item list-group-item-action pb-0" data-mdb-toggle="list" onclick="document.getElementById('playerwow').src = 'https://player.twitch.tv/?channel=taro_yamane&parent=quad-b.github.io'">
                     <div class="row">
                         <div class="col-md-4 col-sm-5">
                             <img src="/img/taro.png" class="w-100">
@@ -85,7 +92,7 @@
                         </div>
                     </div>
                 </button>
-                <button type="button" class="list-group-item list-group-item-action pb-0">
+                <button type="button" class="list-group-item list-group-item-action pb-0" data-mdb-toggle="list">
                     <div class="row">
                         <div class="col-md-4 col-sm-5">
                             <img src="/img/wan.png" class="w-100">
@@ -97,7 +104,7 @@
                         </div>
                     </div>
                 </button>
-                <button type="button" class="list-group-item list-group-item-action pb-0">
+                <button type="button" class="list-group-item list-group-item-action pb-0" data-mdb-toggle="list">
                     <div class="row">
                         <div class="col-md-4 col-sm-5">
                             <img src="/img/art.png" class="w-100">
@@ -109,7 +116,7 @@
                         </div>
                     </div>
                 </button>
-                <button type="button" class="list-group-item list-group-item-action pb-0">
+                <button type="button" class="list-group-item list-group-item-action pb-0" data-mdb-toggle="list">
                     <div class="row">
                         <div class="col-md-4 col-sm-5">
                             <img src="/img/oat.png" class="w-100">
@@ -123,9 +130,9 @@
                 </button>
             </div>
         </div>
-        <div class="col-9 p-0">
+        <div class="col-9 p-0 h-100">
             <iframe class="w-100 h-100" src="https://player.twitch.tv/?channel=khotkool_channel&parent=quad-b.github.io"
-                frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+                frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620" id="playerwow"></iframe>
         </div>
     </div>
 
